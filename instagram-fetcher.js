@@ -18,12 +18,12 @@ jQuery(document).ready(function($) {
                                             <source src="${lastPost.media_url}" type="video/mp4">
                                         Your browser does not support the video tag.
                                         </video>`;
-                        var linkHTML = `<a href="${postLink}" target="_blank">${videoHTML}</a><br><h5>${lastPost.caption}</h5>`;
+                        var linkHTML = `<a href="${postLink}" target="_blank">${videoHTML}</a>`;
                         $('#instagram-post').html(linkHTML);
                     } else if (lastPost.media_type === 'IMAGE') {
                         // Construct HTML for displaying the image
-                        var imageHTML = `<img src="${lastPost.media_url}" alt="${lastPost.caption}">`;
-                        var linkHTML = `<a href="${postLink}" target="_blank">${imageHTML}</a><br><p>${lastPost.caption}</p>`;
+                        var imageHTML = `<img src="${lastPost.media_url}" alt="no image">`;
+                        var linkHTML = `<a href="${postLink}" target="_blank">${imageHTML}</a>`;
                         $('#instagram-post').html(linkHTML);
                     } else {
                         $('#instagram-post').html('Unsupported media type.');

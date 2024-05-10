@@ -3,7 +3,7 @@
 Plugin Name: Instagram Last Post Fetcher
 Description: Display your latest Instagram post by simply entering your access token and account link to showcase dynamic content on your site
 Version: 1.0
-Author: PottersWheel Media
+Author: <a href="https://potterswheelmedia.com"> PottersWheel Media </a>
 */
 
 // Add admin menu
